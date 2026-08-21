@@ -1,0 +1,43 @@
+name: DevKit tool request
+description: Suggest a new developer tool for DevKit
+labels: ["enhancement", "devkit"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping [DevKit](https://github.com/Abdellox/Public_Projects/tree/main/DevKit) grow!
+        Please keep **[DevKit]** at the start of the issue title.
+  - type: input
+    id: tool-name
+    attributes:
+      label: Tool name
+      description: e.g. "YAML ↔ JSON converter"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve?
+      description: Which repetitive task does this remove for developers?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Existing solutions
+      description: What do you use today, and why isn't it good enough?
+  - type: checkboxes
+    id: client-side
+    attributes:
+      label: Client-side requirement
+      description: Every DevKit tool must run entirely in the browser — no uploads, no backend.
+      options:
+        - label: This tool can be implemented fully client-side
+          required: true
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Willingness to contribute
+      description: Adding a tool is one component plus one registry entry — a perfect first PR!
+      options:
+        - label: I would like to build this tool myself (with guidance)
