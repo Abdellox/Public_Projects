@@ -8,6 +8,7 @@ A collection of open-source projects by [@Abdellox](https://github.com/Abdellox)
 | [MiracleMind](./MiracleMind) | Economic Mindset Academy — research-based educational platform on the mindsets behind China & USA's success | HTML / CSS / JS |
 | [OSSRadar](./OSSRadar) | Discover GitHub projects you can contribute to — live `good first issue` / `help wanted` feed + trending repositories | Next.js · TypeScript · Tailwind |
 | [DevKit](./DevKit) | The open-source developer toolbox — 17 free, privacy-first tools (JSON formatter, JWT decoder, regex tester…) running 100% in your browser | Next.js · TypeScript · Tailwind |
+| [AgentGuard](./AgentGuard) | Give your AI coding agent a security boundary — policy engine, dangerous-command blocking, secret detection, session replay, and security reports for AI coding agents | Node.js · TypeScript |
 
 ## Contributing
 

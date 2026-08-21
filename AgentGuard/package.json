@@ -1,0 +1,31 @@
+{
+  "name": "agentguard",
+  "version": "0.1.0",
+  "description": "Give your AI coding agent a security boundary.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "agentguard": "./dist/cli/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli/index.ts",
+    "test": "tsc --noEmit && tsc && node --import tsx --test test/engine.test.ts test/secrets.test.ts test/commands.test.ts test/files.test.ts test/risk.test.ts test/policy.test.ts test/session.test.ts test/cli.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "yaml": "^2.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.4"
+  }
+}
