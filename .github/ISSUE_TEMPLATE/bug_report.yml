@@ -1,0 +1,48 @@
+name: Bug report
+description: Report something broken in OSS Radar
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug!
+        This repository hosts multiple projects — please keep **[OSS Radar]** at the start of the issue title.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what actually happened.
+      placeholder: I filtered by Rust on the Discover page and...
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL / page
+      description: The full URL including query params (e.g. /?label=all&language=rust)
+      placeholder: http://localhost:3000/?label=hw&sort=comments
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Discover feed (issues)
+        - Trending page (repositories)
+        - UI / styling
+        - Build / tooling
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console output or errors
+      render: shell
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Node version (`node --version`), browser if relevant
+      placeholder: Windows 11, Node 20.19.6, Chrome
