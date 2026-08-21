@@ -10,9 +10,11 @@ A lightweight, modern PDF reader for Windows with dark mode, auto-scroll, and te
   - Guy (Male)
   - Aria (Female)
   - Christopher (Male)
+- **Smart TTS** - Auto-skips cover pages, blank pages, and pages with no text. Splits long text into chunks for reliable playback.
 - **PDF Rendering** - Fast rendering powered by PyMuPDF (MuPDF engine)
 - **Zoom** - Ctrl+= / Ctrl+- or mouse wheel with Ctrl
 - **Page Navigation** - Previous/Next buttons, page number input
+- **Scroll Tracking** - Page indicator updates as you scroll
 
 ## Installation
 
@@ -56,8 +58,8 @@ Double-click `run.bat` for quick launch.
 - **Python 3.9+**
 - **PyQt6** - Modern GUI framework
 - **PyMuPDF** - Fast PDF rendering (MuPDF engine)
-- **edge-tts** - Microsoft Neural TTS voices
-- **pygame** - Audio playback
+- **edge-tts** - Microsoft Neural TTS voices (free, no API key needed)
+- **Qt Multimedia / pygame** - Audio playback (auto-selects best available)
 
 ## Project Structure
 
@@ -69,7 +71,7 @@ BlazePDF/
 └── app/
     ├── __init__.py
     ├── main_window.py   # Main window + toolbar
-    ├── pdf_canvas.py    # PDF rendering
-    ├── tts_engine.py    # Text-to-speech engine
-    └── themes.py        # Dark/Light theme styles
+    ├── pdf_canvas.py    # PDF rendering + scroll tracking
+    ├── tts_engine.py    # Text-to-speech engine (edge-tts + Qt audio)
+    └── themes.py        # Dark/Light theme styles + constants
 ```

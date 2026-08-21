@@ -16,6 +16,8 @@ def main():
 
     window = MainWindow()
     window.show()
+    window.raise_()
+    window.activateWindow()
 
     if len(sys.argv) > 1 and os.path.isfile(sys.argv[1]):
         window.pdf_canvas.open_pdf(sys.argv[1])
