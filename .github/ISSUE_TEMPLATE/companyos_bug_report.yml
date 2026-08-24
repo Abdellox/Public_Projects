@@ -1,0 +1,48 @@
+name: CompanyOS bug report
+description: Report something broken or incorrect in CompanyOS
+labels: ["bug", "companyos"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug!
+        This repository hosts multiple projects — please keep **[CompanyOS]** at the start of the issue title.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Content accuracy (wrong or misleading explanation)
+        - UI / styling
+        - Search
+        - Dark mode
+        - Navigation / routing
+        - Accessibility
+        - Build / tooling
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what actually happened. For content issues, quote the passage and explain what's wrong.
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL / page
+      description: The page where the problem occurs (e.g. /fundamentals/cac)
+      placeholder: http://localhost:5173/fundamentals/cac
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console output or errors
+      render: shell
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, browser, Node version if relevant
+      placeholder: Windows 11, Chrome, Node 20

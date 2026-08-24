@@ -1,0 +1,141 @@
+import type { RoleLevel } from "./types";
+
+export const roles: RoleLevel[] = [
+  {
+    id: "intern",
+    title: "Intern",
+    alsoKnownAs: ["Trainee", "Working Student", "Co-op"],
+    typicalExperience: "Student or career switcher; 0 years",
+    scope: "Learns the ropes through real (supervised) work",
+    focus: [
+      "Absorbing how the company and industry actually work",
+      "Delivering small, well-defined tasks end-to-end",
+      "Building a professional network and references",
+    ],
+    reportsTo: "A senior IC or team lead acting as mentor",
+  },
+  {
+    id: "junior",
+    title: "Junior / Associate",
+    alsoKnownAs: ["Associate", "Analyst", "Graduate"],
+    typicalExperience: "0–2 years",
+    scope: "Owns tasks; learns to own projects",
+    focus: [
+      "Executing clearly scoped work with guidance",
+      "Learning tools, processes, and domain vocabulary fast",
+      "Turning feedback into visible improvement quickly",
+    ],
+    reportsTo: "Senior IC, Lead, or Manager depending on team shape",
+  },
+  {
+    id: "mid",
+    title: "Mid-level",
+    alsoKnownAs: ["Professional", "Specialist", "Engineer II/III"],
+    typicalExperience: "2–5 years",
+    scope: "Owns projects from start to finish independently",
+    focus: [
+      "Reliable delivery without close supervision",
+      "Cross-functional coordination for their project area",
+      "Mentoring juniors informally as expertise solidifies",
+    ],
+    reportsTo: "Manager or Lead",
+  },
+  {
+    id: "senior",
+    title: "Senior",
+    alsoKnownAs: ["Senior Specialist", "Staff-track entry"],
+    typicalExperience: "5–8 years",
+    scope: "Owns complex problems spanning multiple projects",
+    focus: [
+      "Technical or domain judgment trusted for ambiguous problems",
+      "Designing solutions others implement; reviewing others' work",
+      "Raising the team's bar through mentoring and standards",
+    ],
+    reportsTo: "Manager or Lead",
+  },
+  {
+    id: "lead",
+    title: "Lead",
+    alsoKnownAs: ["Team Lead", "Tech Lead", "Principal track"],
+    typicalExperience: "6–10+ years",
+    scope: "Guides a team's work while remaining hands-on",
+    focus: [
+      "Setting technical/domain direction for a team",
+      "Unblocking, prioritizing, and coordinating across members",
+      "The classic 'player-coach': half making, half enabling",
+    ],
+    reportsTo: "Manager or Director",
+  },
+  {
+    id: "manager",
+    title: "Manager",
+    alsoKnownAs: ["Engineering Manager", "Sales Manager", "Team Manager"],
+    typicalExperience: "Varies — people skills over tenure",
+    scope: "Responsible for a team of 5–10 people and their outcomes",
+    focus: [
+      "Hiring, coaching, performance management, growth conversations",
+      "Translating department goals into individual priorities",
+      "Shielding the team from chaos; escalating what they can't solve",
+    ],
+    reportsTo: "Director or VP",
+  },
+  {
+    id: "director",
+    title: "Director",
+    alsoKnownAs: ["Head of X", "Senior Director"],
+    typicalExperience: "8–15 years",
+    scope: "Owns an entire function area or multiple teams (30–100 people)",
+    focus: [
+      "Multi-year planning and budget ownership for their area",
+      "Hiring and developing their managers",
+      "Representing the function in cross-functional strategy",
+    ],
+    reportsTo: "VP or C-level",
+  },
+  {
+    id: "vp",
+    title: "VP",
+    alsoKnownAs: ["Vice President", "SVP", "EVP"],
+    typicalExperience: "12–20 years",
+    scope: "Owns a major department or business line company-wide",
+    focus: [
+      "Departmental strategy aligned with executive direction",
+      "Owning headline KPIs presented to the CEO and board",
+      "Organizational design: structure, leadership bench, culture",
+    ],
+    reportsTo: "C-level executive or CEO directly",
+  },
+  {
+    id: "clevel",
+    title: "C-Level",
+    alsoKnownAs: ["CFO", "CTO", "CMO", "COO", "CRO"],
+    typicalExperience: "15–25 years",
+    scope: "Owns one dimension of the entire enterprise",
+    focus: [
+      "Functional strategy across all business units",
+      "Executive-team trade-off decisions and resource allocation",
+      "External representation: investors, press, regulators, key customers",
+    ],
+    reportsTo: "CEO",
+  },
+  {
+    id: "ceo",
+    title: "CEO",
+    alsoKnownAs: ["Chief Executive Officer", "President", "Managing Director"],
+    typicalExperience: "Irrelevant — accountability is the qualification",
+    scope: "Ultimately accountable for everything, especially outcomes",
+    focus: [
+      "Vision and strategy; deciding what game the company plays",
+      "Assembling and coaching the executive team",
+      "Capital allocation and board/investor relationships",
+    ],
+    reportsTo: "Board of Directors",
+  },
+];
+
+export const hierarchyNotes = [
+  "Titles vary wildly between companies. A 'Senior' at a startup may match an 'Associate' at a bank.",
+  "Many companies run dual tracks: deep IC experts (Senior → Staff → Principal → Distinguished) parallel to management (Manager → Director → VP).",
+  "Reporting lines describe formal authority only. Informal influence follows trust and knowledge, not titles.",
+  "Flat startups may compress five levels into two; large enterprises add regional and matrix layers on top.",
+];

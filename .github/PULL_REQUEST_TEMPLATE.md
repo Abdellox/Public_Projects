@@ -1,4 +1,4 @@
-<!-- Title format: [OSS Radar] Short description of the change -->
+<!-- Title format: [ProjectName] Short description of the change — e.g. [OSS Radar] … or [CompanyOS] … -->
 
 ## What does this PR change?
 
@@ -17,7 +17,8 @@
 - [ ] `npm run lint` passes
 - [ ] `npm run build` passes
 - [ ] I tested the change locally (`npm run dev`)
-- [ ] This PR touches only the `OSSRadar/` folder (other projects live here too)
+- [ ] This PR touches only one project's folder (`OSSRadar/`, `CompanyOS/`, …) — other projects live here too
+- [ ] The project's own build passes (e.g. `npm run build` inside that folder)
 
 ## Screenshots (if UI change)
 

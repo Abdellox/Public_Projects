@@ -1,0 +1,39 @@
+name: CompanyOS feature request
+description: Suggest new content, sections, or features for CompanyOS
+labels: ["enhancement", "companyos"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping CompanyOS grow!
+        This repository hosts multiple projects — please keep **[CompanyOS]** at the start of the issue title.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of improvement is this?
+      options:
+        - New content (lesson, department, scenario, glossary term…)
+        - Content improvement (clearer explanation, better example)
+        - Translation
+        - Site feature (search, quizzes, progress tracking…)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Your proposal
+      description: What should be added or changed, and why? For content ideas, sketch the key points.
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Who benefits?
+      description: Which readers does this help (new employees, students, managers…)?
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Are you willing to work on this yourself?
+      options:
+        - label: Yes, I'd like to open a pull request for this

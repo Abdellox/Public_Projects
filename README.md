@@ -9,6 +9,7 @@ A collection of open-source projects by [@Abdellox](https://github.com/Abdellox)
 | [OSSRadar](./OSSRadar) | Discover GitHub projects you can contribute to — live `good first issue` / `help wanted` feed + trending repositories | Next.js · TypeScript · Tailwind |
 | [DevKit](./DevKit) | The open-source developer toolbox — 17 free, privacy-first tools (JSON formatter, JWT decoder, regex tester…) running 100% in your browser | Next.js · TypeScript · Tailwind |
 | [AgentGuard](./AgentGuard) | Give your AI coding agent a security boundary — policy engine, dangerous-command blocking, secret detection, session replay, and security reports for AI coding agents | Node.js · TypeScript |
+| [CompanyOS](./CompanyOS) | Understand how companies work — open-source handbook covering departments, hierarchy, business fundamentals, real-world scenarios, and a 55+ term glossary | React · TypeScript · Tailwind |
 
 ## Contributing
 
