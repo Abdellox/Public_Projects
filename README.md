@@ -10,6 +10,7 @@ A collection of open-source projects by [@Abdellox](https://github.com/Abdellox)
 | [DevKit](./DevKit) | The open-source developer toolbox — 17 free, privacy-first tools (JSON formatter, JWT decoder, regex tester…) running 100% in your browser | Next.js · TypeScript · Tailwind |
 | [AgentGuard](./AgentGuard) | Give your AI coding agent a security boundary — policy engine, dangerous-command blocking, secret detection, session replay, and security reports for AI coding agents | Node.js · TypeScript |
 | [CompanyOS](./CompanyOS) | Understand how companies work — open-source handbook covering departments, hierarchy, business fundamentals, real-world scenarios, and a 55+ term glossary | React · TypeScript · Tailwind |
+| [Stockly](./Stockly) | Inventory & stock management for small businesses — landing page + interactive dashboard preview with charts, low-stock alerts, and pricing | React · Vite · Tailwind CSS |
 
 ## Contributing
 

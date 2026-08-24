@@ -1,0 +1,40 @@
+name: Stockly feature request
+description: Suggest a new feature or improvement for Stockly
+labels: ["enhancement", "stockly"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping Stockly grow!
+        This repository hosts multiple projects — please keep **[Stockly]** at the start of the issue title.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of improvement is this?
+      options:
+        - New landing-page section or dashboard widget
+        - Design / styling improvement
+        - Copy or content improvement
+        - Accessibility improvement
+        - Developer experience / tooling
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Your proposal
+      description: What should be added or changed, and why? Sketch the key details.
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Who benefits?
+      description: Which users does this help (shop owners, warehouse staff, contributors…)?
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Are you willing to work on this yourself?
+      options:
+        - label: Yes, I'd like to open a pull request for this

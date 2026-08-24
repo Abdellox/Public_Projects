@@ -1,0 +1,58 @@
+name: Stockly bug report
+description: Report something broken or incorrect in Stockly
+labels: ["bug", "stockly"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug!
+        This repository hosts multiple projects — please keep **[Stockly]** at the start of the issue title.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Navbar / navigation
+        - Hero / dashboard mockup
+        - Dashboard preview (sidebar, charts, tables)
+        - Pricing section
+        - FAQ / testimonials / footer
+        - Mobile responsiveness
+        - Accessibility
+        - Build / tooling
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what actually happened.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Minimal steps so we can see the problem ourselves.
+      placeholder: |
+        1. Open the dashboard preview section
+        2. Click "Stock Movements" in the sidebar
+        3. …
+  - type: input
+    id: url
+    attributes:
+      label: URL / page
+      description: The page or route where the problem occurs
+      placeholder: http://localhost:5173/#dashboard
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console output or errors
+      render: shell
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, browser, Node version if relevant
+      placeholder: Windows 11, Chrome, Node 20

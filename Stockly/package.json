@@ -1,0 +1,38 @@
+{
+  "name": "stockly",
+  "description": "Simple inventory and stock management platform for small and medium-sized businesses",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Abdellox",
+  "homepage": "https://github.com/Abdellox/Public_Projects/tree/main/Stockly#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Abdellox/Public_Projects.git",
+    "directory": "Stockly"
+  },
+  "keywords": [
+    "inventory",
+    "stock-management",
+    "saas",
+    "react",
+    "vite",
+    "tailwindcss"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.1.4",
+    "vite": "^6.3.2"
+  }
+}
