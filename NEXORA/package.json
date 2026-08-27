@@ -1,0 +1,41 @@
+{
+  "name": "nexora",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "An intelligent digital world for companies — departments, communication, knowledge and AI on one open-source platform.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,magenta \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "npm run dev --workspace @nexora/api",
+    "dev:web": "npm run dev --workspace @nexora/web",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:generate": "npm run generate --workspace @nexora/database",
+    "db:migrate": "npm run migrate --workspace @nexora/database",
+    "db:seed": "npm run seed --workspace @nexora/database"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "concurrently": "^9.1.0",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.19.0",
+    "vitest": "^3.0.2"
+  },
+  "allowScripts": {
+    "esbuild": true,
+    "sharp": true
+  }
+}
