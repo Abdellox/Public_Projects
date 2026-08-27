@@ -1,0 +1,4 @@
+{
+  "extends": "@nexora/config/tsconfig.react.json",
+  "include": ["src"]
+}
