@@ -1,0 +1,55 @@
+name: 🐛 Bug report
+description: Something in SupplyFlow is broken or behaves unexpectedly
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for reporting! Please fill in as much detail as possible so a maintainer (or a contributor) can reproduce and fix it quickly."
+  - type: textarea
+    id: summary
+    attributes:
+      label: Describe the bug
+      description: What happened vs. what you expected to happen?
+      placeholder: "e.g. Receiving an inbound shipment reports success but on-hand stock does not increase."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Minimal steps (and any seed data) needed to trigger the issue.
+      placeholder: |
+        1. Create a product with quantity 5
+        2. Create a PO for 10 and confirm it
+        3. Receive 10 — stock stays 5
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      description: Which module is affected?
+      options:
+        - Products / Suppliers
+        - Inventory / Warehouses
+        - Purchasing (POs)
+        - Inbound shipments
+        - Customer orders / Outbound
+        - Planning / Alerts
+        - Auth / Team / RBAC
+        - Import / Export
+        - UI / Tables
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      description: Deployment mode and versions.
+      placeholder: "local docker-compose / Node 20 / Postgres 16"
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Logs (redact secrets), screenshots, or anything else useful.

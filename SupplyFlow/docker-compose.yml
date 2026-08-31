@@ -1,0 +1,56 @@
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-supplyflow}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-supplyflow}
+      POSTGRES_DB: ${POSTGRES_DB:-supplyflow}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-supplyflow}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    volumes:
+      - redisdata:/data
+
+  web:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-supplyflow}:${POSTGRES_PASSWORD:-supplyflow}@db:5432/${POSTGRES_DB:-supplyflow}
+      REDIS_URL: redis://redis:6379
+      AUTH_SECRET: ${AUTH_SECRET:?Set AUTH_SECRET in .env}
+      NODE_ENV: production
+    ports:
+      - "${APP_PORT:-3000}:3000"
+
+  migrate:
+    build: .
+    profiles: ["tools"]
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-supplyflow}:${POSTGRES_PASSWORD:-supplyflow}@db:5432/${POSTGRES_DB:-supplyflow}
+    command: ["npm", "run", "db:migrate"]
+
+volumes:
+  pgdata:
+  redisdata:

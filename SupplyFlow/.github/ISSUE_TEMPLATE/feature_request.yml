@@ -1,0 +1,38 @@
+name: ✨ Feature request
+description: Suggest an improvement or new capability for SupplyFlow
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: "Suggesting a feature? Great — explain the *problem* first, then the proposed solution. This keeps the discussion focused on real supply-chain pain."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Which daily frustration or supply-chain failure does this address?
+      placeholder: "e.g. We can't tell which open POs are likely to arrive late until after the fact."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How might SupplyFlow solve it? Mock-ups or rough sketches welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What else did you try or consider?
+  - type: dropdown
+    id: roadmap
+    attributes:
+      label: Roadmap fit
+      description: Does this belong in an existing phase (see docs/ROADMAP.md) or extend it?
+      options:
+        - Existing roadmap phase
+        - New phase / stretch goal
+        - Not sure
+    validations:
+      required: true

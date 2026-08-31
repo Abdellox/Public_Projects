@@ -1,0 +1,36 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# builds
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+
+# env & secrets
+.env
+.env.local
+.env.*.local
+
+# databases
+*.db
+*.sqlite
+
+# testing
+coverage/
+playwright-report/
+test-results/
+
+# misc
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+.turbo/
+.vercel
+.idea/
+.vscode/*
+!.vscode/extensions.json

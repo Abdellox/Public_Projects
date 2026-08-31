@@ -1,0 +1,31 @@
+{
+  "name": "supplyflow",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Plan better. Stock smarter. Deliver on time. Open-source supply-chain management platform.",
+  "license": "AGPL-3.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "npm run dev --workspace @supplyflow/web",
+    "build": "npm run build --workspace @supplyflow/web",
+    "start": "npm run start --workspace @supplyflow/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:generate": "npm run generate --workspace @supplyflow/database",
+    "db:migrate": "npm run migrate --workspace @supplyflow/database",
+    "db:push": "npm run push --workspace @supplyflow/database",
+    "db:seed": "npm run seed --workspace @supplyflow/database"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

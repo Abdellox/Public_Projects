@@ -12,6 +12,7 @@ A collection of open-source projects by [@Abdellox](https://github.com/Abdellox)
 | [CompanyOS](./CompanyOS) | Understand how companies work — open-source handbook covering departments, hierarchy, business fundamentals, real-world scenarios, and a 55+ term glossary | React · TypeScript · Tailwind |
 | [Stockly](./Stockly) | Inventory & stock management for small businesses — landing page + interactive dashboard preview with charts, low-stock alerts, and pricing | React · Vite · Tailwind CSS |
 | [NEXORA](./NEXORA) | The open-source digital organization — multi-tenant platform with departments, teams, skills, permission-aware search/AI, and server-enforced tenant isolation | TypeScript · Fastify · Next.js · PostgreSQL |
+| [SupplyFlow](./SupplyFlow) | Open-source collaborative supply-chain management — Excel-like tables, purchasing, inventory, inbound/outbound shipments, planning, and explainable alerts | TypeScript · Next.js · PostgreSQL · Drizzle |
 
 ## Contributing
 
