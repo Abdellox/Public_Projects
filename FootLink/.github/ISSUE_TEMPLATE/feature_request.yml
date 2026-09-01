@@ -1,0 +1,42 @@
+name: Feature request
+description: Suggest an idea for FootLink
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for suggesting an improvement to FootLink!
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What problem would this feature solve?
+      placeholder: "As a player, I want to …"
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe the feature you would like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any workarounds or alternatives you considered.
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - MVP (players, matches, teams, maps, joining, notifications)
+        - Later (payments, tournaments, venue owner, admin)
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched for existing issues about this
+          required: true
