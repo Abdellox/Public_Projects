@@ -1,0 +1,717 @@
+{
+  "@@locale": "ar",
+  "appName": "تِرستورا",
+  "@appName": {
+    "description": "اسم التطبيق"
+  },
+  "appTagline": "اكتشف الأشخاص والplaces والمنتجات والخدمات التي يمكنك الوثوق بها.",
+  "@appTagline": {
+    "description": "الشعار المعروض على شاشة الترحيب"
+  },
+  "home": "الرئيسية",
+  "@home": {
+    "description": "تسمية تنقل التبويب الرئيسي"
+  },
+  "explore": "استكشف",
+  "@explore": {
+    "description": "تسمية تنقل تبويب الاستكشاف"
+  },
+  "map": "الخريطة",
+  "@map": {
+    "description": "تسمية تنقل تبويب الخريطة"
+  },
+  "favorites": "المفضلة",
+  "@favorites": {
+    "description": "تسمية تنقل تبويب المفضلة"
+  },
+  "profile": "الملف الشخصي",
+  "@profile": {
+    "description": "تسمية تنقل تبويب الملف الشخصي"
+  },
+  "login": "تسجيل الدخول",
+  "@login": {
+    "description": "تسمية زر تسجيل الدخول"
+  },
+  "register": "إنشاء حساب",
+  "@register": {
+    "description": "تسمية زر إنشاء حساب جديد"
+  },
+  "forgotPassword": "نسيت كلمة المرور؟",
+  "@forgotPassword": {
+    "description": "رابط لإعادة تعيين كلمة المرور"
+  },
+  "email": "البريد الإلكتروني",
+  "@email": {
+    "description": "تسمية حقل البريد الإلكتروني"
+  },
+  "password": "كلمة المرور",
+  "@password": {
+    "description": "تسمية حقل كلمة المرور"
+  },
+  "fullName": "الاسم الكامل",
+  "@fullName": {
+    "description": "تسمية حقل الاسم الكامل"
+  },
+  "confirmPassword": "تأكيد كلمة المرور",
+  "@confirmPassword": {
+    "description": "تسمية حقل تأكيد كلمة المرور"
+  },
+  "logout": "تسجيل الخروج",
+  "@logout": {
+    "description": "تسمية زر تسجيل الخروج"
+  },
+  "search": "بحث",
+  "@search": {
+    "description": "تسمية زر البحث وplaceholder البحث"
+  },
+  "filter": "تصفية",
+  "@filter": {
+    "description": "تسمية زر التصفية"
+  },
+  "sort": "ترتيب",
+  "@sort": {
+    "description": "تسمية زر الترتيب"
+  },
+  "save": "حفظ",
+  "@save": {
+    "description": "تسمية زر الحفظ"
+  },
+  "share": "مشاركة",
+  "@share": {
+    "description": "تسمية زر المشاركة"
+  },
+  "report": "إبلاغ",
+  "@report": {
+    "description": "تسمية زر الإبلاغ"
+  },
+  "edit": "تعديل",
+  "@edit": {
+    "description": "تسمية زر التعديل"
+  },
+  "delete": "حذف",
+  "@delete": {
+    "description": "تسمية زر الحذف"
+  },
+  "submit": "إرسال",
+  "@submit": {
+    "description": "تسمية زر الإرسال"
+  },
+  "cancel": "إلغاء",
+  "@cancel": {
+    "description": "تسمية زر الإلغاء"
+  },
+  "confirm": "تأكيد",
+  "@confirm": {
+    "description": "تسمية زر التأكيد"
+  },
+  "back": "رجوع",
+  "@back": {
+    "description": "تسمية التنقل للرجوع"
+  },
+  "next": "التالي",
+  "@next": {
+    "description": "تسمية زر الخطوة التالية"
+  },
+  "verified": "موثق",
+  "@verified": {
+    "description": "شارة تدل على إثبات هوية"
+  },
+  "notVerified": "غير موثق",
+  "@notVerified": {
+    "description": "شارة تدل على عدم توثيق الهوية"
+  },
+  "communityReviewed": "مراجعات المجتمع",
+  "@communityReviewed": {
+    "description": "تسمية للقوائم المراجعة من المجتمع"
+  },
+  "reviews": "المراجعات",
+  "@reviews": {
+    "description": "عنوان قسم المراجعات"
+  },
+  "rating": "التقييم",
+  "@rating": {
+    "description": "تسمية عرض التقييم"
+  },
+  "distance": "المسافة",
+  "@distance": {
+    "description": "تسمية عرض المسافة"
+  },
+  "price": "السعر",
+  "@price": {
+    "description": "تسمية عرض السعر"
+  },
+  "category": "الفئة",
+  "@category": {
+    "description": "تسمية فلتر الفئة أو عرضها"
+  },
+  "location": "الموقع",
+  "@location": {
+    "description": "تسمية عرض الموقع"
+  },
+  "categories": "الفئات",
+  "@categories": {
+    "description": "عنوان قسم الفئات"
+  },
+  "highlyRatedNearby": "الأعلى تقييماً بالقرب منك",
+  "@highlyRatedNearby": {
+    "description": "عنوان قسم القريبة الأعلى تقييماً"
+  },
+  "verifiedTrusted": "موثقة وموثوقة",
+  "@verifiedTrusted": {
+    "description": "عنوان قسم القائمة الموثقة"
+  },
+  "recentlyAdded": "أُضيفت حديثاً",
+  "@recentlyAdded": {
+    "description": "عنوان قسم القائمة المضافة حديثاً"
+  },
+  "popularServices": "الخدمات الشائعة",
+  "@popularServices": {
+    "description": "عنوان قسم الخدمات الشائعة"
+  },
+  "services": "الخدمات",
+  "@services": {
+    "description": "تسمية تبويب أو قسم الخدمات"
+  },
+  "products": "المنتجات",
+  "@products": {
+    "description": "تسمية تبويب أو قسم المنتجات"
+  },
+  "openingHours": "ساعات العمل",
+  "@openingHours": {
+    "description": "تسمية ساعات عمل النشاط التجاري"
+  },
+  "phone": "الهاتف",
+  "@phone": {
+    "description": "تسمية رقم الهاتف"
+  },
+  "website": "الموقع الإلكتروني",
+  "@website": {
+    "description": "تسمية رابط الموقع الإلكتروني"
+  },
+  "address": "العنوان",
+  "@address": {
+    "description": "تسمية العنوان المادي"
+  },
+  "writeReview": "اكتب مراجعة",
+  "@writeReview": {
+    "description": "زر لكتابة مراجعة جديدة"
+  },
+  "viewAll": "عرض الكل",
+  "@viewAll": {
+    "description": "رابط لعرض كل العناصر في قسم ما"
+  },
+  "writeHonestReview": "اكتب مراجعة صادقة",
+  "@writeHonestReview": {
+    "description": "دعوة لكتابة مراجعة صادقة"
+  },
+  "starRating": "تقييم النجوم",
+  "@starRating": {
+    "description": "تسمية محدد تقييم النجوم"
+  },
+  "yourReview": "مراجعتك",
+  "@yourReview": {
+    "description": "تسمية مراجعة المستخدم الخاصة"
+  },
+  "anonymous": "مجهول الهوية",
+  "@anonymous": {
+    "description": "خيار النشر بشكل مجهول"
+  },
+  "submitReview": "إرسال المراجعة",
+  "@submitReview": {
+    "description": "زر لإرسال المراجعة"
+  },
+  "editProfile": "تعديل الملف الشخصي",
+  "@editProfile": {
+    "description": "زر لتعديل ملف المستخدم"
+  },
+  "myReviews": "مراجعاتي",
+  "@myReviews": {
+    "description": "قسم يعرض مراجعات المستخدم"
+  },
+  "savedListings": "القوائم المحفوظة",
+  "@savedListings": {
+    "description": "قسم يعرض القوائم المحفوظة"
+  },
+  "settings": "الإعدادات",
+  "@settings": {
+    "description": "تسمية تنقل الإعدادات"
+  },
+  "language": "اللغة",
+  "@language": {
+    "description": "خيار الإعدادات للغة"
+  },
+  "darkMode": "الوضع الداكن",
+  "@darkMode": {
+    "description": "خيار الإعدادات للتبديل بين الوضع الداكن"
+  },
+  "notifications": "الإشعارات",
+  "@notifications": {
+    "description": "خيار الإعدادات للإشعارات"
+  },
+  "about": "حول التطبيق",
+  "@about": {
+    "description": "قسم الإعدادات للمعلومات حول التطبيق"
+  },
+  "version": "الإصدار",
+  "@version": {
+    "description": "تسمية إصدار التطبيق"
+  },
+  "noResults": "لم يتم العثور على نتائج",
+  "@noResults": {
+    "description": "رسالة عند عدم وجود نتائج بحث"
+  },
+  "noFavorites": "لا توجد مفضلات بعد",
+  "@noFavorites": {
+    "description": "رسالة عندما لا يكون للمستخدم مفضلات"
+  },
+  "loading": "جاري التحميل...",
+  "@loading": {
+    "description": "نص مؤشر التحميل العام"
+  },
+  "error": "حدث خطأ ما",
+  "@error": {
+    "description": "رسالة الخطأ العامة"
+  },
+  "success": "!تمت العملية بنجاح",
+  "@success": {
+    "description": "رسالة النجاح العامة"
+  },
+  "tryAgain": "حاول مرة أخرى",
+  "@tryAgain": {
+    "description": "زر لإعادة محاولة عملية فشلت"
+  },
+  "pullToRefresh": "اسحب للتحديث",
+  "@pullToRefresh": {
+    "description": "تعليمات السحب لتحديث المحتوى"
+  },
+  "allCategories": "جميع الفئات",
+  "@allCategories": {
+    "description": "خيار الفلتر لعرض جميع الفئات"
+  },
+  "minRating": "الحد الأدنى للتقييم",
+  "@minRating": {
+    "description": "خيار الفلتر للحد الأدنى من التقييم"
+  },
+  "verifiedOnly": "الموثقة فقط",
+  "@verifiedOnly": {
+    "description": "خيار الفلتر لعرض القوائم الموثقة فقط"
+  },
+  "sortBy": "ترتيب حسب",
+  "@sortBy": {
+    "description": "تسمية خيارات الترتيب"
+  },
+  "bestRated": "الأعلى تقييماً",
+  "@bestRated": {
+    "description": "خيار الترتيب للأعلى تقييماً"
+  },
+  "mostReviewed": "الأكثر مراجعات",
+  "@mostReviewed": {
+    "description": "خيار الترتيب للأكثر مراجعات"
+  },
+  "nearest": "الأقرب",
+  "@nearest": {
+    "description": "خيار الترتيب للأقرب"
+  },
+  "lowestPrice": "أقل سعر",
+  "@lowestPrice": {
+    "description": "خيار الترتيب لأقل سعر أولاً"
+  },
+  "highestPrice": "أعلى سعر",
+  "@highestPrice": {
+    "description": "خيار الترتيب لأعلى سعر أولاً"
+  },
+  "totalViews": "إجمالي المشاهدات",
+  "@totalViews": {
+    "description": "إحصائية لوحة التحكم لإجمالي مشاهدات القائمة"
+  },
+  "totalReviews": "إجمالي المراجعات",
+  "@totalReviews": {
+    "description": "إحصائية لوحة التحكم لإجمالي المراجعات المستلمة"
+  },
+  "averageRating": "متوسط التقييم",
+  "@averageRating": {
+    "description": "إحصائية لوحة التحكم لمتوسط التقييم"
+  },
+  "editListing": "تعديل القائمة",
+  "@editListing": {
+    "description": "زر لتعديل القائمة"
+  },
+  "addService": "إضافة خدمة",
+  "@addService": {
+    "description": "زر لإضافة خدمة جديدة"
+  },
+  "managePhotos": "إدارة الصور",
+  "@managePhotos": {
+    "description": "زر لإدارة صور القائمة"
+  },
+  "trustScore": "نقاط الثقة",
+  "@trustScore": {
+    "description": "تسمية مقياس نقاط الثقة"
+  },
+  "howCalculated": "كيف يتم حساب ذلك؟",
+  "@howCalculated": {
+    "description": "رابط يشرح طريقة حساب نقاط الثقة"
+  },
+  "verificationBadge": "شارة التوثيق",
+  "@verificationBadge": {
+    "description": "تسمية شارة التوثيق"
+  },
+  "sponsoredListing": "قائمة مُروّجة",
+  "@sponsoredListing": {
+    "description": "تسمية القوائم المُروّجة/المُعلّنة"
+  },
+  "emailRequired": "البريد الإلكتروني مطلوب",
+  "@emailRequired": {
+    "description": "رسالة تحقق عند عدم إدخال البريد الإلكتروني"
+  },
+  "invalidEmail": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+  "@invalidEmail": {
+    "description": "رسالة تحقق لبريد إلكتروني غير صحيح"
+  },
+  "passwordTooShort": "يجب أن تكون كلمة المرور 8 أحرف على الأقل",
+  "@passwordTooShort": {
+    "description": "رسالة تحقق لكلمة مرور قصيرة"
+  },
+  "passwordsDoNotMatch": "كلمتا المرور غير متطابقتين",
+  "@passwordsDoNotMatch": {
+    "description": "رسالة تحقق عند عدم تطابق كلمتي المرور"
+  },
+  "nameRequired": "الاسم مطلوب",
+  "@nameRequired": {
+    "description": "رسالة تحقق عند عدم إدخال الاسم"
+  },
+  "welcomeTitle": "مرحباً بك في تِرستورا",
+  "@welcomeTitle": {
+    "description": "العنوان في شاشة الترحيب/التثبيت"
+  },
+  "welcomeSubtitle": "اكتشف الأشخاص والأماكن والمنتجات والخدمات الموثوقة حولك.",
+  "@welcomeSubtitle": {
+    "description": "العنوان الفرعي في شاشة الترحيب/التثبيت"
+  },
+  "getStarted": "ابدأ الآن",
+  "@getStarted": {
+    "description": "زر لبدء عملية التثبيت"
+  },
+  "alreadyHaveAccount": "لديك حساب بالفعل؟",
+  "@alreadyHaveAccount": {
+    "description": "سؤال للمستخدمين الذين لديهم حساب بالفعل"
+  },
+  "dontHaveAccount": "ليس لديك حساب؟",
+  "@dontHaveAccount": {
+    "description": "سؤال للمستخدمين الذين يحتاجون لإنشاء حساب"
+  },
+  "chooseUserType": "اختر نوع حسابك",
+  "@chooseUserType": {
+    "description": "سؤال لاختيار نوع الحساب أثناء التسجيل"
+  },
+  "individualUser": "فرد",
+  "@individualUser": {
+    "description": "نوع الحساب للأفراد"
+  },
+  "businessOwner": "صاحب نشاط تجاري",
+  "@businessOwner": {
+    "description": "نوع الحساب لأصحاب الأعمال التجارية"
+  },
+  "orContinueWith": "أو تابع باستخدام",
+  "@orContinueWith": {
+    "description": "نص فاصل قبل خيارات تسجيل الدخول الاجتماعية"
+  },
+  "continueWithGoogle": "المتابعة باستخدام Google",
+  "@continueWithGoogle": {
+    "description": "زر تسجيل الدخول عبر Google"
+  },
+  "continueWithApple": "المتابعة باستخدام Apple",
+  "@continueWithApple": {
+    "description": "زر تسجيل الدخول عبر Apple"
+  },
+  "resetPassword": "إعادة تعيين كلمة المرور",
+  "@resetPassword": {
+    "description": "زر لبدء إعادة تعيين كلمة المرور"
+  },
+  "resetPasswordSent": "تم إرسال بريد إعادة تعيين كلمة المرور. تحقق من بريدك الإلكتروني.",
+  "@resetPasswordSent": {
+    "description": "رسالة تأكيد بعد إرسال بريد إعادة تعيين كلمة المرور"
+  },
+  "changePassword": "تغيير كلمة المرور",
+  "@changePassword": {
+    "description": "زر لتغيير كلمة المرور"
+  },
+  "currentPassword": "كلمة المرور الحالية",
+  "@currentPassword": {
+    "description": "تسمية حقل كلمة المرور الحالية"
+  },
+  "newPassword": "كلمة المرور الجديدة",
+  "@newPassword": {
+    "description": "تسمية حقل كلمة المرور الجديدة"
+  },
+  "saveChanges": "حفظ التغييرات",
+  "@saveChanges": {
+    "description": "زر لحفظ تعديلات الملف الشخصي"
+  },
+  "discardChanges": "تجاهل التغييرات؟",
+  "@discardChanges": {
+    "description": "عنوان حوار تجاهل التغييرات"
+  },
+  "discardChangesMessage": "لديك تغييرات غير محفوظة. هل أنت متأكد من أنك تريد تجاهلها؟",
+  "@discardChangesMessage": {
+    "description": "نص حوار تجاهل التغييرات"
+  },
+  "yes": "نعم",
+  "@yes": {
+    "description": "تسمية الزر الإيجابي"
+  },
+  "no": "لا",
+  "@no": {
+    "description": "تسمية الزر السلبي"
+  },
+  "openNow": "مفتوح الآن",
+  "@openNow": {
+    "description": "تسمية تدل على أن النشاط مفتوح حالياً"
+  },
+  "closed": "مغلق",
+  "@closed": {
+    "description": "تسمية تدل على أن النشاط مغلق حالياً"
+  },
+  "opensAt": "يفتح الساعة {time}",
+  "@opensAt": {
+    "description": "تسمية تدل على وقت فتح النشاط",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "9:00 صباحاً"
+      }
+    }
+  },
+  "closesAt": "يغلق الساعة {time}",
+  "@closesAt": {
+    "description": "تسمية تدل على وقت إغلاق النشاط",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "5:00 مساءً"
+      }
+    }
+  },
+  "photos": "الصور",
+  "@photos": {
+    "description": "عنوان قسم صور القائمة"
+  },
+  "addPhoto": "إضافة صورة",
+  "@addPhoto": {
+    "description": "زر لإضافة صورة جديدة"
+  },
+  "removePhoto": "إزالة الصورة",
+  "@removePhoto": {
+    "description": "زر لإزالة صورة"
+  },
+  "reportListing": "الإبلاغ عن القائمة",
+  "@reportListing": {
+    "description": "زر للإبلاغ عن قائمة"
+  },
+  "reportReason": "سبب الإبلاغ",
+  "@reportReason": {
+    "description": "تسمية حقل سبب الإبلاغ"
+  },
+  "submitReport": "إرسال البلاغ",
+  "@submitReport": {
+    "description": "زر لإرسال البلاغ"
+  },
+  "reportSubmitted": "تم إرسال البلاغ. شكراً لك!",
+  "@reportSubmitted": {
+    "description": "رسالة تأكيد بعد إرسال البلاغ"
+  },
+  "shareListing": "مشاركة القائمة",
+  "@shareListing": {
+    "description": "عنوان حوار مشاركة القائمة"
+  },
+  "directions": "الاتجاهات",
+  "@directions": {
+    "description": "زر للحصول على الاتجاهات إلى الموقع"
+  },
+  "call": "اتصال",
+  "@call": {
+    "description": "زر للاتصال برقم الهاتف"
+  },
+  "visitWebsite": "زيارة الموقع الإلكتروني",
+  "@visitWebsite": {
+    "description": "زر لزيارة الموقع الإلكتروني للقائمة"
+  },
+  "sendEmail": "إرسال بريد إلكتروني",
+  "@sendEmail": {
+    "description": "زر لإرسال بريد إلكتروني"
+  },
+  "yourLocation": "موقعك الحالي",
+  "@yourLocation": {
+    "description": "تسمية الموقع الحالي للمستخدم"
+  },
+  "enableLocation": "تفعيل خدمات الموقع",
+  "@enableLocation": {
+    "description": "سؤال لتفعيل خدمات الموقع"
+  },
+  "locationPermissionDenied": "تم رفض إذن الموقع. يرجى تفعيله من الإعدادات.",
+  "@locationPermissionDenied": {
+    "description": "رسالة خطأ عند رفض إذن الموقع"
+  },
+  "offline": "أنت غير متصل بالإنترنت",
+  "@offline": {
+    "description": "رسالة عندما يكون الجهاز غير متصل"
+  },
+  "networkError": "خطأ في الشبكة. يرجى التحقق من اتصالك.",
+  "@networkError": {
+    "description": "رسالة خطأ لمشاكل الشبكة"
+  },
+  "serverError": "خطأ في الخادم. يرجى المحاولة مرة أخرى لاحقاً.",
+  "@serverError": {
+    "description": "رسالة خطأ لمشاكل الخادم"
+  },
+  "deleteAccount": "حذف الحساب",
+  "@deleteAccount": {
+    "description": "زر لحذف حساب المستخدم"
+  },
+  "deleteAccountConfirm": "هل أنت متأكد؟ لا يمكن التراجع عن هذا الإجراء.",
+  "@deleteAccountConfirm": {
+    "description": "رسالة تأكيد لحذف الحساب"
+  },
+  "privacyPolicy": "سياسة الخصوصية",
+  "@privacyPolicy": {
+    "description": "رابط لسياسة الخصوصية"
+  },
+  "termsOfService": "شروط الخدمة",
+  "@termsOfService": {
+    "description": "رابط لشروط الخدمة"
+  },
+  "contactUs": "تواصل معنا",
+  "@contactUs": {
+    "description": "زر أو قسم للتواصل مع الدعم"
+  },
+  "recentActivity": "النشاط الأخير",
+  "@recentActivity": {
+    "description": "عنوان قسم النشاط الأخير"
+  },
+  "seeMore": "عرض المزيد",
+  "@seeMore": {
+    "description": "رابط لعرض المزيد من المحتوى"
+  },
+  "seeLess": "عرض أقل",
+  "@seeLess": {
+    "description": "رابط لعرض محتوى أقل"
+  },
+  "copiedToClipboard": "تم النسخ إلى الحافظة",
+  "@copiedToClipboard": {
+    "description": "رسالة عند نسخ النص"
+  },
+  "writeReviewFor": "اكتب مراجعة لـ {name}",
+  "@writeReviewFor": {
+    "description": "سؤال لكتابة مراجعة لقائمة محددة",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "قهوة جو"
+      }
+    }
+  },
+  "reviewsCount": "{count,plural, =0{لا توجد مراجعات} other{{count} مراجعات}}",
+  "@reviewsCount": {
+    "description": "عدد المراجعات المُنسّق",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "metersAway": "على بعد {distance} م",
+  "@metersAway": {
+    "description": "المسافة بالمتر",
+    "placeholders": {
+      "distance": {
+        "type": "String",
+        "example": "250"
+      }
+    }
+  },
+  "kilometersAway": "على بعد {distance} كم",
+  "@kilometersAway": {
+    "description": "المسافة بالكيلومتر",
+    "placeholders": {
+      "distance": {
+        "type": "String",
+        "example": "3.5"
+      }
+    }
+  },
+  "followers": "المتابعون",
+  "@followers": {
+    "description": "تسمية عدد المتابعين"
+  },
+  "following": "يتابع",
+  "@following": {
+    "description": "تسمية عدد المتابَعين"
+  },
+  "follow": "متابعة",
+  "@follow": {
+    "description": "زر لمتابعة مستخدم أو نشاط تجاري"
+  },
+  "unfollow": "إلغاء المتابعة",
+  "@unfollow": {
+    "description": "زر لإلغاء متابعة مستخدم أو نشاط تجاري"
+  },
+  "updateAvailable": "تحديث متاح",
+  "@updateAvailable": {
+    "description": "تسمية تدل على توفر تحديث للتطبيق"
+  },
+  "rateApp": "قيّم هذا التطبيق",
+  "@rateApp": {
+    "description": "زر لتقييم التطبيق على المتجر"
+  },
+  "shareApp": "شارك هذا التطبيق",
+  "@shareApp": {
+    "description": "زر لمشاركة التطبيق مع الآخرين"
+  },
+  "selectLanguage": "اختر اللغة",
+  "@selectLanguage": {
+    "description": "عنوان حوار اختيار اللغة"
+  },
+  "reportReasonSpam": "رسائل غير مرغوب فيها",
+  "@reportReasonSpam": {
+    "description": "خيار سبب الإبلاغ للرسائل غير المرغوب فيها"
+  },
+  "reportReasonInaccurate": "معلومات غير دقيقة",
+  "@reportReasonInaccurate": {
+    "description": "خيار سبب الإبلاغ للمعلومات غير الدقيقة"
+  },
+  "reportReasonOffensive": "محتوى مسيء",
+  "@reportReasonOffensive": {
+    "description": "خيار سبب الإبلاغ للمحتوى المسيء"
+  },
+  "reportReasonFake": "مزيف أو احتيالي",
+  "@reportReasonFake": {
+    "description": "خيار سبب الإبلاغ للمحتوى المزيف أو الاحتيالي"
+  },
+  "reportReasonOther": "أخرى",
+  "@reportReasonOther": {
+    "description": "خيار سبب الإبلاغ لأسباب أخرى"
+  },
+  "noReviewsYet": "لا توجد مراجعات بعد. كن أول من يراجع!",
+  "@noReviewsYet": {
+    "description": "رسالة عندما لا توجد مراجعات لقائمة"
+  },
+  "listingsCount": "{count,plural, =0{لا توجد قوائم} other{{count} قوائم}}",
+  "@listingsCount": {
+    "description": "عدد القوائم المُنسّق",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "memberSince": "عضو منذ {date}",
+  "@memberSince": {
+    "description": "تسمية تدل على تاريخ تسجيل العضوية",
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "يناير 2025"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    prefer_const_constructors: true
+    prefer_const_declarations: true
+    avoid_print: true
+    prefer_single_quotes: true
+    require_trailing_commas: true
+    avoid_unnecessary_containers: true
+    prefer_is_empty: true
+    prefer_is_not_empty: true
+    use_key_in_widget_constructors: true
+    prefer_final_locals: true
+    sort_constructors_first: true
+    prefer_typing_uninitialized_variables: true
+    always_declare_return_types: true
+    annotate_overrides: true
+    avoid_dynamic_calls: false
+    prefer_const_literals_to_create_immutables: true

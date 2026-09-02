@@ -1,0 +1,717 @@
+{
+  "@@locale": "en",
+  "appName": "Trustora",
+  "@appName": {
+    "description": "The application name"
+  },
+  "appTagline": "Find people, places, products, and services you can trust.",
+  "@appTagline": {
+    "description": "The application tagline shown on welcome screen"
+  },
+  "home": "Home",
+  "@home": {
+    "description": "Navigation label for home tab"
+  },
+  "explore": "Explore",
+  "@explore": {
+    "description": "Navigation label for explore tab"
+  },
+  "map": "Map",
+  "@map": {
+    "description": "Navigation label for map tab"
+  },
+  "favorites": "Favorites",
+  "@favorites": {
+    "description": "Navigation label for favorites tab"
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "Navigation label for profile tab"
+  },
+  "login": "Log In",
+  "@login": {
+    "description": "Button label for logging in"
+  },
+  "register": "Sign Up",
+  "@register": {
+    "description": "Button label for signing up"
+  },
+  "forgotPassword": "Forgot Password?",
+  "@forgotPassword": {
+    "description": "Link to reset password"
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Label for email input field"
+  },
+  "password": "Password",
+  "@password": {
+    "description": "Label for password input field"
+  },
+  "fullName": "Full Name",
+  "@fullName": {
+    "description": "Label for full name input field"
+  },
+  "confirmPassword": "Confirm Password",
+  "@confirmPassword": {
+    "description": "Label for confirm password input field"
+  },
+  "logout": "Log Out",
+  "@logout": {
+    "description": "Button label for logging out"
+  },
+  "search": "Search",
+  "@search": {
+    "description": "Search button and placeholder label"
+  },
+  "filter": "Filter",
+  "@filter": {
+    "description": "Filter button label"
+  },
+  "sort": "Sort",
+  "@sort": {
+    "description": "Sort button label"
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Save button label"
+  },
+  "share": "Share",
+  "@share": {
+    "description": "Share button label"
+  },
+  "report": "Report",
+  "@report": {
+    "description": "Report button label"
+  },
+  "edit": "Edit",
+  "@edit": {
+    "description": "Edit button label"
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Delete button label"
+  },
+  "submit": "Submit",
+  "@submit": {
+    "description": "Submit button label"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button label"
+  },
+  "confirm": "Confirm",
+  "@confirm": {
+    "description": "Confirm button label"
+  },
+  "back": "Back",
+  "@back": {
+    "description": "Back navigation label"
+  },
+  "next": "Next",
+  "@next": {
+    "description": "Next step button label"
+  },
+  "verified": "Verified",
+  "@verified": {
+    "description": "Badge indicating a verified listing"
+  },
+  "notVerified": "Not Verified",
+  "@notVerified": {
+    "description": "Badge indicating an unverified listing"
+  },
+  "communityReviewed": "Community Reviewed",
+  "@communityReviewed": {
+    "description": "Label for community reviewed listings"
+  },
+  "reviews": "Reviews",
+  "@reviews": {
+    "description": "Section heading for reviews"
+  },
+  "rating": "Rating",
+  "@rating": {
+    "description": "Label for rating display"
+  },
+  "distance": "Distance",
+  "@distance": {
+    "description": "Label for distance display"
+  },
+  "price": "Price",
+  "@price": {
+    "description": "Label for price display"
+  },
+  "category": "Category",
+  "@category": {
+    "description": "Label for category filter or display"
+  },
+  "location": "Location",
+  "@location": {
+    "description": "Label for location display"
+  },
+  "categories": "Categories",
+  "@categories": {
+    "description": "Section heading for categories"
+  },
+  "highlyRatedNearby": "Highly Rated Nearby",
+  "@highlyRatedNearby": {
+    "description": "Section heading for highly rated nearby listings"
+  },
+  "verifiedTrusted": "Verified & Trusted",
+  "@verifiedTrusted": {
+    "description": "Section heading for verified listings"
+  },
+  "recentlyAdded": "Recently Added",
+  "@recentlyAdded": {
+    "description": "Section heading for recently added listings"
+  },
+  "popularServices": "Popular Services",
+  "@popularServices": {
+    "description": "Section heading for popular services"
+  },
+  "services": "Services",
+  "@services": {
+    "description": "Tab or section label for services"
+  },
+  "products": "Products",
+  "@products": {
+    "description": "Tab or section label for products"
+  },
+  "openingHours": "Opening Hours",
+  "@openingHours": {
+    "description": "Label for business opening hours"
+  },
+  "phone": "Phone",
+  "@phone": {
+    "description": "Label for phone number"
+  },
+  "website": "Website",
+  "@website": {
+    "description": "Label for website link"
+  },
+  "address": "Address",
+  "@address": {
+    "description": "Label for physical address"
+  },
+  "writeReview": "Write a Review",
+  "@writeReview": {
+    "description": "Button to write a new review"
+  },
+  "viewAll": "View All",
+  "@viewAll": {
+    "description": "Link to view all items in a section"
+  },
+  "writeHonestReview": "Write an Honest Review",
+  "@writeHonestReview": {
+    "description": "Prompt to write an honest review"
+  },
+  "starRating": "Star Rating",
+  "@starRating": {
+    "description": "Label for star rating selector"
+  },
+  "yourReview": "Your Review",
+  "@yourReview": {
+    "description": "Label for the user's own review"
+  },
+  "anonymous": "Anonymous",
+  "@anonymous": {
+    "description": "Option to post a review anonymously"
+  },
+  "submitReview": "Submit Review",
+  "@submitReview": {
+    "description": "Button to submit a review"
+  },
+  "editProfile": "Edit Profile",
+  "@editProfile": {
+    "description": "Button to edit user profile"
+  },
+  "myReviews": "My Reviews",
+  "@myReviews": {
+    "description": "Section showing user's own reviews"
+  },
+  "savedListings": "Saved Listings",
+  "@savedListings": {
+    "description": "Section showing user's saved listings"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Navigation label for settings"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Settings option for language"
+  },
+  "darkMode": "Dark Mode",
+  "@darkMode": {
+    "description": "Settings option for dark mode toggle"
+  },
+  "notifications": "Notifications",
+  "@notifications": {
+    "description": "Settings option for notifications"
+  },
+  "about": "About",
+  "@about": {
+    "description": "Settings section for about information"
+  },
+  "version": "Version",
+  "@version": {
+    "description": "App version label"
+  },
+  "noResults": "No results found",
+  "@noResults": {
+    "description": "Message when search returns no results"
+  },
+  "noFavorites": "No favorites yet",
+  "@noFavorites": {
+    "description": "Message when user has no saved favorites"
+  },
+  "loading": "Loading...",
+  "@loading": {
+    "description": "Generic loading indicator text"
+  },
+  "error": "Something went wrong",
+  "@error": {
+    "description": "Generic error message"
+  },
+  "success": "Success!",
+  "@success": {
+    "description": "Generic success message"
+  },
+  "tryAgain": "Try Again",
+  "@tryAgain": {
+    "description": "Button to retry a failed action"
+  },
+  "pullToRefresh": "Pull to refresh",
+  "@pullToRefresh": {
+    "description": "Instruction to pull down to refresh content"
+  },
+  "allCategories": "All Categories",
+  "@allCategories": {
+    "description": "Filter option to show all categories"
+  },
+  "minRating": "Minimum Rating",
+  "@minRating": {
+    "description": "Filter option for minimum rating threshold"
+  },
+  "verifiedOnly": "Verified Only",
+  "@verifiedOnly": {
+    "description": "Filter option to show only verified listings"
+  },
+  "sortBy": "Sort By",
+  "@sortBy": {
+    "description": "Label for sort options"
+  },
+  "bestRated": "Best Rated",
+  "@bestRated": {
+    "description": "Sort option for best rated listings"
+  },
+  "mostReviewed": "Most Reviewed",
+  "@mostReviewed": {
+    "description": "Sort option for most reviewed listings"
+  },
+  "nearest": "Nearest",
+  "@nearest": {
+    "description": "Sort option for nearest listings"
+  },
+  "lowestPrice": "Lowest Price",
+  "@lowestPrice": {
+    "description": "Sort option for lowest price first"
+  },
+  "highestPrice": "Highest Price",
+  "@highestPrice": {
+    "description": "Sort option for highest price first"
+  },
+  "totalViews": "Total Views",
+  "@totalViews": {
+    "description": "Dashboard stat for total listing views"
+  },
+  "totalReviews": "Total Reviews",
+  "@totalReviews": {
+    "description": "Dashboard stat for total reviews received"
+  },
+  "averageRating": "Average Rating",
+  "@averageRating": {
+    "description": "Dashboard stat for average rating"
+  },
+  "editListing": "Edit Listing",
+  "@editListing": {
+    "description": "Button to edit a listing"
+  },
+  "addService": "Add Service",
+  "@addService": {
+    "description": "Button to add a new service"
+  },
+  "managePhotos": "Manage Photos",
+  "@managePhotos": {
+    "description": "Button to manage listing photos"
+  },
+  "trustScore": "Trust Score",
+  "@trustScore": {
+    "description": "Label for the trust score metric"
+  },
+  "howCalculated": "How is this calculated?",
+  "@howCalculated": {
+    "description": "Link explaining trust score calculation"
+  },
+  "verificationBadge": "Verification Badge",
+  "@verificationBadge": {
+    "description": "Label for the verification badge"
+  },
+  "sponsoredListing": "Sponsored Listing",
+  "@sponsoredListing": {
+    "description": "Label for sponsored/promoted listings"
+  },
+  "emailRequired": "Email is required",
+  "@emailRequired": {
+    "description": "Validation message for missing email"
+  },
+  "invalidEmail": "Please enter a valid email address",
+  "@invalidEmail": {
+    "description": "Validation message for invalid email format"
+  },
+  "passwordTooShort": "Password must be at least 8 characters",
+  "@passwordTooShort": {
+    "description": "Validation message for short password"
+  },
+  "passwordsDoNotMatch": "Passwords do not match",
+  "@passwordsDoNotMatch": {
+    "description": "Validation message when passwords do not match"
+  },
+  "nameRequired": "Name is required",
+  "@nameRequired": {
+    "description": "Validation message for missing name"
+  },
+  "welcomeTitle": "Welcome to Trustora",
+  "@welcomeTitle": {
+    "description": "Title on the welcome/onboarding screen"
+  },
+  "welcomeSubtitle": "Discover trusted people, places, products, and services around you.",
+  "@welcomeSubtitle": {
+    "description": "Subtitle on the welcome/onboarding screen"
+  },
+  "getStarted": "Get Started",
+  "@getStarted": {
+    "description": "Button to begin onboarding"
+  },
+  "alreadyHaveAccount": "Already have an account?",
+  "@alreadyHaveAccount": {
+    "description": "Prompt for users who already have an account"
+  },
+  "dontHaveAccount": "Don't have an account?",
+  "@dontHaveAccount": {
+    "description": "Prompt for users who need to create an account"
+  },
+  "chooseUserType": "Choose Your Account Type",
+  "@chooseUserType": {
+    "description": "Prompt to select account type during registration"
+  },
+  "individualUser": "Individual",
+  "@individualUser": {
+    "description": "Account type for individual/personal users"
+  },
+  "businessOwner": "Business Owner",
+  "@businessOwner": {
+    "description": "Account type for business owners"
+  },
+  "orContinueWith": "Or continue with",
+  "@orContinueWith": {
+    "description": "Divider text before social login options"
+  },
+  "continueWithGoogle": "Continue with Google",
+  "@continueWithGoogle": {
+    "description": "Button for Google sign-in"
+  },
+  "continueWithApple": "Continue with Apple",
+  "@continueWithApple": {
+    "description": "Button for Apple sign-in"
+  },
+  "resetPassword": "Reset Password",
+  "@resetPassword": {
+    "description": "Button to initiate password reset"
+  },
+  "resetPasswordSent": "Password reset email sent. Check your inbox.",
+  "@resetPasswordSent": {
+    "description": "Confirmation message after password reset email"
+  },
+  "changePassword": "Change Password",
+  "@changePassword": {
+    "description": "Button to change password"
+  },
+  "currentPassword": "Current Password",
+  "@currentPassword": {
+    "description": "Label for current password input"
+  },
+  "newPassword": "New Password",
+  "@newPassword": {
+    "description": "Label for new password input"
+  },
+  "saveChanges": "Save Changes",
+  "@saveChanges": {
+    "description": "Button to save profile changes"
+  },
+  "discardChanges": "Discard Changes?",
+  "@discardChanges": {
+    "description": "Title of discard changes dialog"
+  },
+  "discardChangesMessage": "You have unsaved changes. Are you sure you want to discard them?",
+  "@discardChangesMessage": {
+    "description": "Body of discard changes dialog"
+  },
+  "yes": "Yes",
+  "@yes": {
+    "description": "Affirmative button label"
+  },
+  "no": "No",
+  "@no": {
+    "description": "Negative button label"
+  },
+  "openNow": "Open Now",
+  "@openNow": {
+    "description": "Label indicating business is currently open"
+  },
+  "closed": "Closed",
+  "@closed": {
+    "description": "Label indicating business is currently closed"
+  },
+  "opensAt": "Opens at {time}",
+  "@opensAt": {
+    "description": "Label showing when a business opens",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "9:00 AM"
+      }
+    }
+  },
+  "closesAt": "Closes at {time}",
+  "@closesAt": {
+    "description": "Label showing when a business closes",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "5:00 PM"
+      }
+    }
+  },
+  "photos": "Photos",
+  "@photos": {
+    "description": "Section heading for listing photos"
+  },
+  "addPhoto": "Add Photo",
+  "@addPhoto": {
+    "description": "Button to add a new photo"
+  },
+  "removePhoto": "Remove Photo",
+  "@removePhoto": {
+    "description": "Button to remove a photo"
+  },
+  "reportListing": "Report Listing",
+  "@reportListing": {
+    "description": "Button to report a listing"
+  },
+  "reportReason": "Reason for Report",
+  "@reportReason": {
+    "description": "Label for report reason field"
+  },
+  "submitReport": "Submit Report",
+  "@submitReport": {
+    "description": "Button to submit a report"
+  },
+  "reportSubmitted": "Report submitted. Thank you!",
+  "@reportSubmitted": {
+    "description": "Confirmation message after submitting a report"
+  },
+  "shareListing": "Share Listing",
+  "@shareListing": {
+    "description": "Title of share listing dialog"
+  },
+  "directions": "Directions",
+  "@directions": {
+    "description": "Button to get directions to a location"
+  },
+  "call": "Call",
+  "@call": {
+    "description": "Button to call a phone number"
+  },
+  "visitWebsite": "Visit Website",
+  "@visitWebsite": {
+    "description": "Button to visit listing website"
+  },
+  "sendEmail": "Send Email",
+  "@sendEmail": {
+    "description": "Button to send an email"
+  },
+  "yourLocation": "Your Location",
+  "@yourLocation": {
+    "description": "Label for user's current location"
+  },
+  "enableLocation": "Enable Location Services",
+  "@enableLocation": {
+    "description": "Prompt to enable location services"
+  },
+  "locationPermissionDenied": "Location permission denied. Please enable it in settings.",
+  "@locationPermissionDenied": {
+    "description": "Error message when location permission is denied"
+  },
+  "offline": "You are offline",
+  "@offline": {
+    "description": "Message when device is offline"
+  },
+  "networkError": "Network error. Please check your connection.",
+  "@networkError": {
+    "description": "Error message for network issues"
+  },
+  "serverError": "Server error. Please try again later.",
+  "@serverError": {
+    "description": "Error message for server issues"
+  },
+  "deleteAccount": "Delete Account",
+  "@deleteAccount": {
+    "description": "Button to delete user account"
+  },
+  "deleteAccountConfirm": "Are you sure? This action cannot be undone.",
+  "@deleteAccountConfirm": {
+    "description": "Confirmation message for account deletion"
+  },
+  "privacyPolicy": "Privacy Policy",
+  "@privacyPolicy": {
+    "description": "Link to privacy policy"
+  },
+  "termsOfService": "Terms of Service",
+  "@termsOfService": {
+    "description": "Link to terms of service"
+  },
+  "contactUs": "Contact Us",
+  "@contactUs": {
+    "description": "Button or section for contacting support"
+  },
+  "recentActivity": "Recent Activity",
+  "@recentActivity": {
+    "description": "Section heading for recent activity"
+  },
+  "seeMore": "See More",
+  "@seeMore": {
+    "description": "Link to see more content"
+  },
+  "seeLess": "See Less",
+  "@seeLess": {
+    "description": "Link to see less content"
+  },
+  "copiedToClipboard": "Copied to clipboard",
+  "@copiedToClipboard": {
+    "description": "Toast message when text is copied"
+  },
+  "writeReviewFor": "Write a review for {name}",
+  "@writeReviewFor": {
+    "description": "Prompt to write a review for a specific listing",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Joe's Coffee"
+      }
+    }
+  },
+  "reviewsCount": "{count,plural, =0{No reviews} other{{count} reviews}}",
+  "@reviewsCount": {
+    "description": "Formatted review count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "metersAway": "{distance} m away",
+  "@metersAway": {
+    "description": "Distance in meters",
+    "placeholders": {
+      "distance": {
+        "type": "String",
+        "example": "250"
+      }
+    }
+  },
+  "kilometersAway": "{distance} km away",
+  "@kilometersAway": {
+    "description": "Distance in kilometers",
+    "placeholders": {
+      "distance": {
+        "type": "String",
+        "example": "3.5"
+      }
+    }
+  },
+  "followers": "Followers",
+  "@followers": {
+    "description": "Label for followers count"
+  },
+  "following": "Following",
+  "@following": {
+    "description": "Label for following count"
+  },
+  "follow": "Follow",
+  "@follow": {
+    "description": "Button to follow a user or business"
+  },
+  "unfollow": "Unfollow",
+  "@unfollow": {
+    "description": "Button to unfollow a user or business"
+  },
+  "updateAvailable": "Update Available",
+  "@updateAvailable": {
+    "description": "Label indicating an app update is available"
+  },
+  "rateApp": "Rate This App",
+  "@rateApp": {
+    "description": "Button to rate the app on the store"
+  },
+  "shareApp": "Share This App",
+  "@shareApp": {
+    "description": "Button to share the app with others"
+  },
+  "selectLanguage": "Select Language",
+  "@selectLanguage": {
+    "description": "Title of language selection dialog"
+  },
+  "reportReasonSpam": "Spam",
+  "@reportReasonSpam": {
+    "description": "Report reason option for spam"
+  },
+  "reportReasonInaccurate": "Inaccurate Information",
+  "@reportReasonInaccurate": {
+    "description": "Report reason option for inaccurate information"
+  },
+  "reportReasonOffensive": "Offensive Content",
+  "@reportReasonOffensive": {
+    "description": "Report reason option for offensive content"
+  },
+  "reportReasonFake": "Fake or Fraudulent",
+  "@reportReasonFake": {
+    "description": "Report reason option for fake/fraudulent content"
+  },
+  "reportReasonOther": "Other",
+  "@reportReasonOther": {
+    "description": "Report reason option for other reasons"
+  },
+  "noReviewsYet": "No reviews yet. Be the first to review!",
+  "@noReviewsYet": {
+    "description": "Message when no reviews exist for a listing"
+  },
+  "listingsCount": "{count,plural, =0{No listings} other{{count} listings}}",
+  "@listingsCount": {
+    "description": "Formatted listing count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "memberSince": "Member since {date}",
+  "@memberSince": {
+    "description": "Label showing member registration date",
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "Jan 2025"
+      }
+    }
+  }
+}
