@@ -1,0 +1,33 @@
+{
+  "name": "awesome-ai-coding",
+  "version": "1.0.0",
+  "description": "One-stop collection of configs, skills, workflows & tools for every AI coding agent",
+  "main": "cli/index.js",
+  "bin": {
+    "awesome-ai-coding": "./cli/index.js"
+  },
+  "scripts": {
+    "start": "node cli/index.js",
+    "test": "node cli/index.js list"
+  },
+  "keywords": [
+    "ai",
+    "coding",
+    "claude",
+    "codex",
+    "gemini",
+    "opencode",
+    "cursor",
+    "mcp",
+    "awesome"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awesome-ai-coding/awesome-ai-coding"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

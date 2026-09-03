@@ -14,6 +14,7 @@ A collection of open-source projects by [@Abdellox](https://github.com/Abdellox)
 | [NEXORA](./NEXORA) | The open-source digital organization — multi-tenant platform with departments, teams, skills, permission-aware search/AI, and server-enforced tenant isolation | TypeScript · Fastify · Next.js · PostgreSQL |
 | [SupplyFlow](./SupplyFlow) | Open-source collaborative supply-chain management — Excel-like tables, purchasing, inventory, inbound/outbound shipments, planning, and explainable alerts | TypeScript · Next.js · PostgreSQL · Drizzle |
 | [AlgoAtlas](./AlgoAtlas) | Explore, visualize, understand algorithms — interactive visualizers, 15+ hand-written algorithm articles, complexity explorer, and comparison guides | React · TypeScript · Vite · Tailwind CSS |
+| [AwesomeAICoding](./AwesomeAICoding) | One-stop collection of configs, skills, workflows & tools for every AI coding agent — with a one-command CLI setup | Node.js · TypeScript |
 
 ## Contributing
 
