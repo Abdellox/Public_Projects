@@ -1,0 +1,26 @@
+{
+  "name": "@businex/module-audit",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@businex/auth": "*",
+    "@businex/database": "*",
+    "@businex/lib": "*",
+    "@businex/types": "*",
+    "hono": "^4.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

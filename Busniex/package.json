@@ -1,0 +1,46 @@
+{
+  "name": "businex",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "BUSINEX — The Universal Open Business Platform. One platform. Every business. No unnecessary duplication.",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "modules/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,magenta \"npm run dev -w @businex/api\" \"npm run dev -w @businex/web\"",
+    "dev:api": "npm run dev -w @businex/api",
+    "dev:web": "npm run dev -w @businex/web",
+    "build": "npm run build -w @businex/api && npm run build -w @businex/web",
+    "build:api": "npm run build -w @businex/api",
+    "build:web": "npm run build -w @businex/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:generate": "npm run db:generate -w @businex/database",
+    "db:migrate": "npm run db:migrate -w @businex/database",
+    "db:push": "npm run db:push -w @businex/database",
+    "db:studio": "npm run db:studio -w @businex/database",
+    "db:seed": "npm run db:seed -w @businex/database",
+    "docker:up": "docker compose -f infrastructure/docker-compose.yml up -d",
+    "docker:down": "docker compose -f infrastructure/docker-compose.yml down"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.28.0",
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.33.0",
+    "vitest": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=20.11"
+  }
+}

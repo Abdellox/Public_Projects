@@ -1,0 +1,47 @@
+{
+  "name": "@businex/api",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "dev:no-watch": "tsx src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --hookTimeout=30000"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.0",
+    "@businex/auth": "*",
+    "@businex/config": "*",
+    "@businex/database": "*",
+    "@businex/lib": "*",
+    "@businex/module-audit": "*",
+    "@businex/module-catalog": "*",
+    "@businex/module-crm": "*",
+    "@businex/module-document": "*",
+    "@businex/module-identity": "*",
+    "@businex/module-inventory": "*",
+    "@businex/module-invoicing": "*",
+    "@businex/module-notification": "*",
+    "@businex/module-organization": "*",
+    "@businex/module-party": "*",
+    "@businex/module-pos": "*",
+    "@businex/module-workflow": "*",
+    "@businex/types": "*",
+    "@businex/validation": "*",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "hono": "^4.7.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
+  }
+}
