@@ -1,0 +1,305 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ─── Users & Auth ───────────────────────────────────────────────
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime?
+  image         String?
+  password      String?
+  role          String    @default("USER") // USER | ORGANIZER | ADMIN
+  phone         String?
+  countryId     String?
+  cityId        String?
+  preferredCountryId String?
+  preferredCityId    String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  accounts         Account[]
+  sessions         Session[]
+  organizerProfile OrganizerProfile?
+  favorites        Favorite[]
+  registrations    EventRegistration[]
+  reminders        EventReminder[]
+  reports          EventReport[]
+  notifications    Notification[]
+
+  @@index([email])
+  @@index([role])
+}
+
+model Account {
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([provider, providerAccountId])
+}
+
+model Session {
+  sessionToken String @unique
+  userId       String
+  expires      DateTime
+  user         User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@id([identifier, token])
+}
+
+// ─── Organizer ──────────────────────────────────────────────────
+
+model OrganizerProfile {
+  id          String  @id @default(cuid())
+  userId      String  @unique
+  name        String
+  description String?
+  logo        String?
+  website     String?
+  email       String?
+  phone       String?
+  facebook    String?
+  twitter     String?
+  instagram   String?
+  linkedin    String?
+  approved    Boolean @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user   User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  events Event[]
+
+  @@index([userId])
+  @@index([approved])
+}
+
+// ─── Geography ──────────────────────────────────────────────────
+
+model Country {
+  id        String  @id @default(cuid())
+  name      String  @unique
+  code      String  @unique // ISO 3166-1 alpha-2
+  slug      String  @unique
+  emoji     String?
+  latitude  Float?
+  longitude Float?
+  createdAt DateTime @default(now())
+
+  cities    City[]
+  events    Event[]
+
+  @@index([slug])
+  @@index([code])
+}
+
+model City {
+  id        String  @id @default(cuid())
+  name      String
+  slug      String
+  latitude  Float?
+  longitude Float?
+  countryId String
+  createdAt DateTime @default(now())
+
+  country Country @relation(fields: [countryId], references: [id], onDelete: Cascade)
+  events  Event[]
+
+  @@unique([slug, countryId])
+  @@index([slug])
+  @@index([countryId])
+}
+
+// ─── Events ─────────────────────────────────────────────────────
+
+model Category {
+  id        String  @id @default(cuid())
+  name      String  @unique
+  slug      String  @unique
+  icon      String?
+  color     String?
+  createdAt DateTime @default(now())
+
+  events Event[]
+
+  @@index([slug])
+}
+
+model Event {
+  id                String   @id @default(cuid())
+  title             String
+  slug              String   @unique
+  shortDescription  String
+  fullDescription   String
+  coverImage        String?
+
+  categoryId        String
+  organizerId       String
+  countryId         String
+  cityId            String
+
+  venueName         String?
+  address           String?
+  latitude          Float?
+  longitude         Float?
+
+  startDate         DateTime
+  startTime         String   // "19:00"
+  endDate           DateTime
+  endTime           String   // "23:00"
+  timeZone          String   @default("UTC")
+
+  price             Float    @default(0)
+  currency          String   @default("USD")
+  isFree            Boolean  @default(true)
+  ticketUrl         String?
+  registrationUrl   String?
+  websiteUrl        String?
+  contactEmail      String?
+
+  ageRequirement    String?
+  accessibility     String?
+  isIndoor          Boolean?
+  status            String   @default("PENDING") // DRAFT | PENDING | PUBLISHED | CANCELLED | FINISHED
+  isFeatured        Boolean  @default(false)
+  viewCount         Int      @default(0)
+
+  // Source tracking for imported events
+  source            String?  // "manual" | "eventbrite" | "meetup" | etc.
+  externalUrl       String?
+  externalId        String?
+
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  category        Category          @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+  organizer       OrganizerProfile  @relation(fields: [organizerId], references: [id], onDelete: Cascade)
+  country         Country           @relation(fields: [countryId], references: [id], onDelete: Restrict)
+  city            City              @relation(fields: [cityId], references: [id], onDelete: Restrict)
+
+  favorites       Favorite[]
+  registrations   EventRegistration[]
+  reminders       EventReminder[]
+  reports         EventReport[]
+
+  @@index([slug])
+  @@index([categoryId])
+  @@index([organizerId])
+  @@index([countryId])
+  @@index([cityId])
+  @@index([status])
+  @@index([startDate])
+  @@index([isFeatured])
+  @@index([latitude, longitude])
+}
+
+// ─── User Interactions ──────────────────────────────────────────
+
+model Favorite {
+  id        String   @id @default(cuid())
+  userId    String
+  eventId   String
+  createdAt DateTime @default(now())
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  event Event @relation(fields: [eventId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, eventId])
+  @@index([userId])
+  @@index([eventId])
+}
+
+model EventRegistration {
+  id        String   @id @default(cuid())
+  userId    String
+  eventId   String
+  status    String   @default("INTERESTED") // INTERESTED | GOING | MAYBE | CANCELLED
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  event Event @relation(fields: [eventId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, eventId])
+  @@index([userId])
+  @@index([eventId])
+}
+
+model EventReminder {
+  id        String   @id @default(cuid())
+  userId    String
+  eventId   String
+  remindAt  DateTime
+  sent      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  event Event @relation(fields: [eventId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, eventId])
+  @@index([userId])
+  @@index([remindAt])
+}
+
+model EventReport {
+  id        String   @id @default(cuid())
+  userId    String
+  eventId   String
+  reason    String
+  details   String?
+  status    String   @default("PENDING") // PENDING | REVIEWED | RESOLVED
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  event Event @relation(fields: [eventId], references: [id], onDelete: Cascade)
+
+  @@index([eventId])
+  @@index([status])
+}
+
+// ─── Notifications ──────────────────────────────────────────────
+
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  title     String
+  message   String
+  type      String   // "event_reminder" | "event_update" | "approval" | "cancellation"
+  link      String?
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([read])
+}
