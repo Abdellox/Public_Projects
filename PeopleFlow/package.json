@@ -1,0 +1,24 @@
+{
+  "name": "peopleflow",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Everything your people need, in one place. Open-source HR platform.",
+  "license": "Apache-2.0",
+  "packageManager": "pnpm@10.8.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel --filter @peopleflow/api --filter @peopleflow/web dev",
+    "dev:api": "pnpm --filter @peopleflow/api dev",
+    "dev:web": "pnpm --filter @peopleflow/web dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "db:migrate": "pnpm --filter @peopleflow/database migrate",
+    "db:migrate:deploy": "pnpm --filter @peopleflow/database migrate:deploy",
+    "db:seed": "pnpm --filter @peopleflow/database seed",
+    "db:studio": "pnpm --filter @peopleflow/database studio"
+  }
+}
