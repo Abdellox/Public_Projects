@@ -1,4 +1,0 @@
-{
-  "extends": "@nexora/config/tsconfig.node.json",
-  "include": ["src", "test"]
-}

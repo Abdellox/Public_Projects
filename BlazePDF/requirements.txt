@@ -1,4 +1,0 @@
-PyQt6>=6.5
-PyMuPDF>=1.23
-edge-tts>=6.1
-pygame>=2.5
